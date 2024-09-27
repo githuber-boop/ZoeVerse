@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from './assets/Logo.png'
 import webDev from './assets/web-dev.png'
 import webDesign from './assets/web-design.png'
@@ -11,21 +11,37 @@ import TechStack1 from './assets/tech-stack-portfolio-1.png'
 import TechStack2 from './assets/tech-stack-portfolio-2.png'
 
 const App = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setIsOpen(!isOpen)
+  };
+  
   return (
     <>
       <header className="hero">
-        <nav className="navbar">
+      <nav className="navbar">
           <div className="container">
             <div className="logo">
               <img src={logo}alt="" />
             </div>
 
-            <ul className="nav-links">
-              <li className="nav-link"><a className='hover-underline-animation' href="">Home</a></li>
-              <li className="nav-link"><a className='hover-underline-animation' href="">Services</a></li>
+            <ul className={`nav-links ${isMenuOpen ? 'active' : ''} `}>
+              <li className="nav-link"><a className='hover-underline-animation' href="#">Home</a></li>
+              <li className="nav-link"><a className='hover-underline-animation' href="#services">Services</a></li>
+              <li className="nav-link"><a className='hover-underline-animation' href="#portfolio">Porfolio</a></li>
               <li className="nav-link"><a className='hover-underline-animation' href="">Why Choose Us</a></li>
-              <li className="nav-link"><a className='hover-underline-animation' href="">Porfolio</a></li>
             </ul>
+
+          {isOpen ?<div className="hamburger" onClick={toggleMenu}>
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
+            </div>: <div class="cross" onClick={toggleMenu}></div> }
+            
           </div>
         </nav>
 
@@ -42,7 +58,7 @@ const App = () => {
       </header>
 
       <div className="background">
-        <div className="services">
+        <div className="services" id='services'>
           <div className="container">
             <div className="two-col">
               <h1 className='heading'>Our<br></br> Services</h1>
@@ -73,7 +89,7 @@ const App = () => {
           </div>
         </div>
 
-        <div className="portfolio">
+        <div className="portfolio" id='portfolio'>
           <div className="container">
             <h1 className="heading">OUR RECENT PROJECTS</h1>
             <div className="portfolio-grid">
@@ -82,7 +98,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>CSI CATHEDRAL KOLLAM</h1>
                   <img src={TechStack1} alt="" />
-                  <div className="block"><a href="#">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                  <div className="block"><a href="https://csicathedralkollam.com" target='_blank'>Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
