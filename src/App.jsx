@@ -72,6 +72,7 @@ const App = () => {
             </div>
           </div>
         </div>
+
         <div className="portfolio">
           <div className="container">
             <h1 className="heading">OUR RECENT PROJECTS</h1>
@@ -81,7 +82,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>CSI CATHEDRAL KOLLAM</h1>
                   <img src={TechStack1} alt="" />
-                  <a href="#">Live Site</a>
+                  <div className="block"><a href="#">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
@@ -89,7 +90,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>MIDTOWN RESTAURANT</h1>
                   <img className='techStack2' src={TechStack2} alt="" />
-                  <a href="#" >Live Site</a>
+                  <div className="block"><a href="#">Check Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
@@ -97,7 +98,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>NINESTARS</h1>
                   <img src={TechStack1} alt="" />
-                  <a href="#">Live Site</a>
+                  <div className="block"><a href="https://ninestars-portfolio.onrender.com">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
@@ -105,11 +106,19 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>GENIUS GEMS ACADEMY</h1>
                   <img src={TechStack1} alt="" />
-                  <a href="#">Live Site</a>
+                  <div className="block"><a href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+
+      </div>
+
+      <div className="background-2">
+        <div className="about-us">
+          
         </div>
       </div>
     </>
