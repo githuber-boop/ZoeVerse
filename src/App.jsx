@@ -11,13 +11,17 @@ import TechStack1 from './assets/tech-stack-portfolio-1.png'
 import TechStack2 from './assets/tech-stack-portfolio-2.png'
 
 const App = () => {
-
+  const phoneNumber = '+919444963725';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(true)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     setIsOpen(!isOpen)
+  };
+
+  const handleClick = () => {
+    alert(`Calling ${phoneNumber}`);
   };
   
   return (
@@ -50,8 +54,8 @@ const App = () => {
             <h1>Transforming <br></br>Web Ideas into<br></br> Reality</h1>
             <p>We offer expert web development, design, and content<br></br> creation, building seamless, visually engaging websites that <br></br> elevate your online presence and drive meaningful results.</p>
             <div className="cta">
-              <a className="button" href='#'>Let's Talk</a>
-              <a className="button" href='#'>Get a Quote</a>
+              <a className="button" href={`tel:${phoneNumber}`} onClick={handleClick}>Let's Talk</a>
+              <a className="button"  href='#' >Get a Quote</a>
             </div>
           </div>
         </div>

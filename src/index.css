@@ -12,6 +12,7 @@
 
 @font-face {
   font-family: Porter;
+  font-display: swap;
   src: url("./fonts/porter-sans-inline-block.ttf");
 }
 
@@ -402,6 +403,15 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
   }
 
+  .portfolio-card-content img  {
+    width: 20vw;
+    /* margin: 10px 0; */
+  }
+
+  .portfolio-card-content .techStack2 {
+    width: 13vw;
+  } 
+
   .nav-links  {
     /* flex-direction: column; */
     position: absolute;
@@ -435,4 +445,48 @@ p, h1, h2, h3, h4, h5, h6 {
   .hamburger {
     display: flex;
   }
+
+  .hero-text p br {
+    display: none;
+   }
+
+   .hero-text p {
+    padding: 0 3.5rem;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+ .nav-links {
+  flex-direction: column;
+ }
+
+ .navbar {
+  padding: 50px 0;
+ }
+
+ .logo img{
+  width: 60vw;
+ }
+
+ .hero-text h1 {
+  font-size: calc(1.1rem + 2vw);
+ }
+
+
+ .hero-text p {
+  font-size: calc(.8rem + 1vw);
+ }
+
+ .hero-text p br, .hero-text h1 br {
+  display: none;
+ }
+
+ .cta {
+  margin-top: 2.25rem;
+  flex-direction: column;
+ }
+
+.heading {
+  font-size: calc(1rem + 6vw) !important;
+ }
 }
