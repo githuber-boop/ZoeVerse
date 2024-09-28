@@ -11,6 +11,7 @@ import TechStack1 from './assets/tech-stack-portfolio-1.png'
 import TechStack2 from './assets/tech-stack-portfolio-2.png'
 import ProcessCarousel from './components/ProcessCarousel'
 import Navbar from './components/Navbar'
+import visionImage from './assets/vision.jpg'
 
 const App = () => {
   const phoneNumber = '+919444963725';
@@ -91,7 +92,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>MIDTOWN RESTAURANT</h1>
                   <img className='techStack2' src={TechStack2} alt="" />
-                  <div className="block"><a href="#">Check Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                  <div className="block"><a href="#" >Check Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
@@ -99,7 +100,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>NINESTARS</h1>
                   <img src={TechStack1} alt="" />
-                  <div className="block"><a href="https://ninestars-portfolio.onrender.com">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                  <div className="block"><a target='_blank' href="https://ninestars-portfolio.onrender.com">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
@@ -107,7 +108,7 @@ const App = () => {
                 <div className="portfolio-card-content">
                   <h1>GENIUS GEMS ACADEMY</h1>
                   <img src={TechStack1} alt="" />
-                  <div className="block"><a href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                  <div className="block"><a target='_blank' href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
             </div>
@@ -118,12 +119,32 @@ const App = () => {
       </div>
 
 
-      <div className="background-2">
-        <ProcessCarousel />
-        <div className="about-us">
-          
+        <div className="background-2">
+          <div className="container process" id='process'>
+            <h1 className='heading'>FROM CONCEPT TO COMPLETION</h1>
+          <ProcessCarousel />
+          </div>
+          <div className="about-us">
+            <div className="container">
+              <h1 className="heading">ABOUT US</h1>
+              <div className="about-us-grid">
+                <div className="about-us-image">
+                   <img src={visionImage} alt="" />
+                </div>
+                <div className="about-us-text">
+                  <div><p>ZoeVerse  is dedicated to bringing your digital ideas to life with a focus on customer satisfaction and quality. Rooted in the essence of "Zoe"—a restored and flourishing life—our work mirrors the transformation that comes from renewal. </p></div>
+
+
+                  <div><p>We infuse each project with the essence of transformation, creating websites that not only meet your needs but also elevate your brand to new heights. Our team collaborates closely with you to understand your vision, delivering dynamic, high-performing solutions that stand the test of time.</p> </div>
+                  
+                  <div>
+                    <p>From initial concept to ongoing support, we ensure your website evolves with your business. At ZoeVerse, we don’t just build websites—we create lasting, impactful experiences that grow with you.</p>
+                    </div>  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div className="container">
         <div className="contact-us" id='contactUs'>
@@ -133,14 +154,14 @@ const App = () => {
             <p className='contacts'>zoeversetech@gmail.com <span>|</span> +91 9444963725</p>
 
             <div className="socials">
-             <a ><i class="fa-brands fa-square-instagram"></i></a>
+             {/* <a ><i class="fa-brands fa-square-instagram"></i></a> */}
              <a href={whatsappUrl} target='_blank' rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
              <a href={mailtoUrl} target='_blank' rel="noopener noreferrer"><i class="fa-solid fa-square-envelope"></i></a>
             </div>
           </div>
 
           <form action="https://formsubmit.co/zoeversetech@gmail.com" className="contact-form" method='POST'>
-            <h1>Get a Call Back Now !</h1>
+            <h1>Get a Call Back Now!</h1>
             <p>Kickstart your website or mobile app project with our expert team!</p>
 
             <div className='label-group'>

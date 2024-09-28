@@ -61,6 +61,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 }
 
+
 .navbar {
   padding: 30px 0;
   position: relative;
@@ -247,11 +248,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .background-2 {
   background-image: url('./assets/Opp-Half.png');
   height: 100%;
-  /* background-position: center; */
+  background-position: right;
   /* background-size: cover; */
   background-repeat: no-repeat;
   padding-top: 2.125rem; 
   /* padding-bottom: 16.5rem; */
+  padding: 0;
 }
 
 .two-col {
@@ -389,6 +391,45 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .portfolio-card-content a i {
   margin-left: 3px;
+}
+
+
+.process {
+  padding: 100px 30px;
+}
+
+.about-us {
+  padding: 50px 0;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about-us-image img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-us-text div {
+  background-color: var(--card);
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+.about-us-text p {
+  color: rgba(255, 255, 255, .8);
+  font-family: 'Figtree';
+  font-size: 1.2rem;
 }
 
 .contact-us {
@@ -535,6 +576,10 @@ p, h1, h2, h3, h4, h5, h6 {
   .portfolio-card-content .techStack2 {
     width: 13vw;
   } 
+
+  .about-us-grid {
+    grid-template-columns: 1fr;
+  }
 
   .contact-us {
     grid-template-columns: 1fr;

@@ -22,7 +22,7 @@ const Navbar = () => {
         <li className="nav-link"><a className='hover-underline-animation' href="#">Home</a></li>
         <li className="nav-link"><a className='hover-underline-animation' href="#services">Services</a></li>
         <li className="nav-link"><a className='hover-underline-animation' href="#portfolio">Porfolio</a></li>
-        <li className="nav-link"><a className='hover-underline-animation' href="">Why Choose Us</a></li>
+        <li className="nav-link"><a className='hover-underline-animation' href="#process">Why Choose Us</a></li>
       </ul>
 
     {isOpen ?<div className="hamburger" onClick={toggleMenu}>

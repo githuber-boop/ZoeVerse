@@ -1,7 +1,43 @@
 .processItem{
-    height:100px;
-    width:100px;
-    color:white;
+    height:100%;
+    width:90%;
+    color:rgba(255, 255, 255, .8);
     margin-top: 10px;
-    background-color: white;
+    background-color: var(--card);
+    padding: 50px 20px;
+    font-family: 'Figtree';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    gap: 1rem;
+    /* transition: transform 0.5s ease-in; */
 }
+/* 
+.processItem:hover {
+    transform: scale(1.05) translateY(-10px);
+} */
+
+.processItem h1 {
+    background: linear-gradient(90deg,#FF7F00, #EB9C1E );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-family: 'Readex Pro';
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.processItem p {
+    padding: 0 30px;
+}
+
+.processItem i {
+    background: linear-gradient(90deg,#FF7F00, #EB9C1E );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+    font-size:60px ;
+}
+
+
+  

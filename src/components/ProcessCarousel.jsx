@@ -8,48 +8,40 @@ const ProcessCarousel = () => {
   return (
     <div>
         <Carousel
-  additionalTransfrom={0}
-  arrows
+  // additionalTransfrom={0}
+  // arrows
   autoPlaySpeed={3000}
-  centerMode={false}
-  className=""
-  containerClass="container"
-  dotListClass=""
+  // centerMode={true}
+  // className=""
+  // dotListClass=""
   draggable
   focusOnSelect={false}
   infinite={false}
-  itemClass=""
-  keyBoardControl
+  // itemClass=""
+  // keyBoardControl
   minimumTouchDrag={80}
-  pauseOnHover
-  renderArrowsWhenDisabled={false}
-  renderButtonGroupOutside={false}
-  renderDotsOutside={false}
+  // pauseOnHover
+  // renderArrowsWhenDisabled={false}
+  // renderButtonGroupOutside={false}
+  // renderDotsOutside={false}
   responsive={{
     desktop: {
       breakpoint: {
         max: 3000,
-        min: 1024
+        min: 564
       },
-      items: 3,
+      items: 2,
       partialVisibilityGutter: 40
     },
     mobile: {
       breakpoint: {
-        max: 464,
+        max: 564,
         min: 0
       },
       items: 1,
       partialVisibilityGutter: 30
     },
-    tablet: {
-      breakpoint: {
-        max: 1024,
-        min: 464
-      },
-      items: 2,
-      partialVisibilityGutter: 30
-    }
+  
   }}
   rewind={false}
   rewindWithAnimation={false}
@@ -57,13 +49,30 @@ const ProcessCarousel = () => {
   shouldResetAutoplay
   showDots={false}
   sliderClass=""
-  slidesToSlide={2}
+  slidesToSlide={1}
   swipeable
 >
-<div className='processItem'>Item 1</div>
-  <div className='processItem'>Item 2</div>
-  <div className='processItem'>Item 3</div>
-  <div className='processItem'>Item 4</div>
+  <div className='processItem'>
+    <i class="fa-solid fa-headset"></i>
+    <h1>Consultation</h1>
+    <p>We listen, understand, and strategize. From the first conversation, we dive deep  into your vision to ensure we're aligned with your goals.
+  </p>
+  </div>
+  <div className='processItem'>
+  <i class="fa-brands fa-dribbble"></i>
+    <h1>Design</h1>
+    <p> Crafting your digital identity. We translate your brand's essence into a visual masterpiece, balancing aesthetics with functionality.</p>
+  </div>
+  <div className='processItem'>
+    <i class="fa-solid fa-laptop-code"></i>
+    <h1>Development</h1>
+    <p>Where creativity meets technology – Using the latest tech, we build robust, scalable, and dynamic solutions tailored to your needs.</p>
+  </div>
+  <div className='processItem'>
+    <i class="fa-regular fa-window-maximize"></i>
+    <h1>Launch & Support</h1>
+    <p>Beyond the launch – we’re in it for the long haul : We ensure a seamless go-live experience, with ongoing maintenance and optimization to keep you ahead of the curve.</p>
+  </div>
 </Carousel>
     </div>
   )
