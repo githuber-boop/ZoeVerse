@@ -9,7 +9,7 @@ import portfolioImg3 from './assets/portfolio-3.png'
 import portfolioImg4 from './assets/portfolio-4.png'
 import TechStack1 from './assets/tech-stack-portfolio-1.png'
 import TechStack2 from './assets/tech-stack-portfolio-2.png'
-
+import person from './assets/person.png'
 const App = () => {
   const phoneNumber = '+919444963725';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -154,7 +154,10 @@ const App = () => {
             <h1>Get a Call Back Now !</h1>
             <p>Kickstart your website or mobile app project with our expert team!</p>
 
-            
+            <div className='label-group'>
+              <label htmlFor="">Your Name:</label>
+              <input type="text" placeholder={` ${<img src={person}></img>} |  Enter your name here`} />
+            </div>
           </form>
         </div>
       </div>
