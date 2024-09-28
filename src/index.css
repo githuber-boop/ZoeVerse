@@ -381,9 +381,110 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: 3px;
 }
 
+.contact-us {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgba(255, 255, 255, .9);
+  font-family: 'Figtree';
+  gap: 1rem;
+}
+
+.contact-form {
+  background-color: var(--card);
+  padding: 25px 1.625rem;
+  border-radius: 10px;
+}
+
 .contact-details h1 {
-  color: white;
+  color: rgba(255, 255, 255, .9);
   font-family: 'Readex Pro';
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  color: rgba(255, 255, 255, .8);
+  font-family: 'Readex Pro';
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.contacts {
+  color: #EB5F1E !important;
+  /* display: none; */
+  margin-top: 20px;
+}
+
+.contacts span {
+  margin: 0 20px;
+}
+
+.contact-details {
+  font-family: 'Figtree';
+  color: rgba(255, 255, 255, .85);
+}
+.label-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+.label-group label {
+  font-size: 1.25rem;
+}
+
+.label-group input, .label-group textarea {
+  background-color: #E5DDF6;
+  padding: .5rem .45rem;
+  border-radius: 10px;
+}
+
+.label-group textarea {
+  resize: vertical;
+}
+
+.label-group label span {
+  color:#EB5F1E ;
+}
+
+.contact-form p {
+  margin:.4rem 0 1.25rem 0;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+.contact-form .button {
+  background-color: #EB5F1E;
+  padding: 14px 5.25rem;
+  display: block;
+  margin: 0 auto;
+  font-family: "DM Sans";
+  color: white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border: 2px solid #EB5F1E;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-form .button:hover,
+.contact-form.button:focus {
+  background:none;
+  border-color: #EB5F1E;
+  color: #EB5F1E;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials i {
+  color: #EB5F1E;
+  border: #EB5F1E;
 }
 
 
@@ -414,6 +515,8 @@ p, h1, h2, h3, h4, h5, h6 {
   .portfolio-card-content .techStack2 {
     width: 13vw;
   } 
+
+  
 
   .nav-links  {
     /* flex-direction: column; */

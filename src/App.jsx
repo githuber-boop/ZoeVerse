@@ -127,17 +127,39 @@ const App = () => {
           <div className="contact-details">
             <h1>HAVE A PROJECT IN MIND?</h1>
             <p>We'd love to hear about your digital project. Please get in touch with one of our Project Consultants.</p>
-            <p>zoeverse@gmail.com  |  +91 9444963725</p>
+            <p className='contacts'>zoeversetech@gmail.com <span>|</span> +91 9444963725</p>
+
+            <div className="socials">
+             <i class="fa-brands fa-square-instagram"></i>
+             <i class="fa-brands fa-square-whatsapp"></i>
+             <i class="fa-solid fa-square-envelope"></i>
+            </div>
           </div>
 
-          <form action="" className="contact-form">
+          <form action="https://formsubmit.co/zoeversetech@gmail.com" className="contact-form" method='POST'>
             <h1>Get a Call Back Now !</h1>
             <p>Kickstart your website or mobile app project with our expert team!</p>
 
             <div className='label-group'>
-              <label htmlFor="">Your Name:</label>
-              <input type="text" placeholder={` ${<img src={person}></img>} |  Enter your name here`} />
+              <label htmlFor="">Your Name<span>*</span> :</label>
+              <input type="text" name='name' required placeholder='🙎🏻‍♂️      |     Enter your name here' />
             </div>
+            <div className='label-group'>
+              <label htmlFor="">Your Email<span>*</span> :</label>
+              <input type="email" name='email' required  placeholder='✉️     |     Enter your email here' />
+            </div>
+            <div className='label-group'>
+              <label htmlFor="">Your Number<span>*</span> :</label>
+              <input type="text" name='number' required placeholder='📞     |     Enter your number here' />
+            </div>
+            <div className='label-group'>
+              <label htmlFor="">Tell us about your project:</label>
+              <textarea name="details" id="" placeholder="🖋️     |     What's your project about?" rows={10}>
+
+              </textarea>
+            </div>
+
+            <button type="submit" className='button'>Submit</button>
           </form>
         </div>
       </div>
