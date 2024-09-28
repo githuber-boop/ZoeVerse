@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import logo from './assets/Logo.png'
+import React from 'react'
+
 import webDev from './assets/web-dev.png'
 import webDesign from './assets/web-design.png'
 import webContent from './assets/web-content.png'
@@ -9,16 +9,10 @@ import portfolioImg3 from './assets/portfolio-3.png'
 import portfolioImg4 from './assets/portfolio-4.png'
 import TechStack1 from './assets/tech-stack-portfolio-1.png'
 import TechStack2 from './assets/tech-stack-portfolio-2.png'
-import person from './assets/person.png'
+
 const App = () => {
   const phoneNumber = '+919444963725';
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(true)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    setIsOpen(!isOpen)
-  };
+  
 
   const handleClick = () => {
     alert(`Calling ${phoneNumber}`);
@@ -27,28 +21,8 @@ const App = () => {
   return (
     <>
       <header className="hero">
-      <nav className="navbar">
-          <div className="container">
-            <div className="logo">
-              <img src={logo}alt="" />
-            </div>
 
-            <ul className={`nav-links ${isMenuOpen ? 'active' : ''} `}>
-              <li className="nav-link"><a className='hover-underline-animation' href="#">Home</a></li>
-              <li className="nav-link"><a className='hover-underline-animation' href="#services">Services</a></li>
-              <li className="nav-link"><a className='hover-underline-animation' href="#portfolio">Porfolio</a></li>
-              <li className="nav-link"><a className='hover-underline-animation' href="">Why Choose Us</a></li>
-            </ul>
-
-          {isOpen ?<div className="hamburger" onClick={toggleMenu}>
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
-            </div>: <div class="cross" onClick={toggleMenu}></div> }
-            
-          </div>
-        </nav>
-
+      <Navbar />
         <div className="container">
           <div className="hero-text">
             <h1>Transforming <br></br>Web Ideas into<br></br> Reality</h1>
@@ -136,7 +110,10 @@ const App = () => {
 
       </div>
 
+
       <div className="background-2">
+        {/* Process component */}
+        <ProcessCarousel />
         <div className="about-us">
           
         </div>
