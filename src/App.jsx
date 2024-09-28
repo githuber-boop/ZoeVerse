@@ -9,10 +9,17 @@ import portfolioImg3 from './assets/portfolio-3.png'
 import portfolioImg4 from './assets/portfolio-4.png'
 import TechStack1 from './assets/tech-stack-portfolio-1.png'
 import TechStack2 from './assets/tech-stack-portfolio-2.png'
+import ProcessCarousel from './components/ProcessCarousel'
+import Navbar from './components/Navbar'
 
 const App = () => {
   const phoneNumber = '+919444963725';
-  
+  const whattsapNumber = '9444963725';
+  const recipient = "zoeversetech@gmail.com";
+  const mailtoUrl = `mailto:${recipient}`;
+  const message = encodeURIComponent("Hello! I'd like to inquire...");
+
+  const whatsappUrl = `https://wa.me/${whattsapNumber}?text=${message}`;
 
   const handleClick = () => {
     alert(`Calling ${phoneNumber}`);
@@ -29,7 +36,7 @@ const App = () => {
             <p>We offer expert web development, design, and content<br></br> creation, building seamless, visually engaging websites that <br></br> elevate your online presence and drive meaningful results.</p>
             <div className="cta">
               <a className="button" href={`tel:${phoneNumber}`} onClick={handleClick}>Let's Talk</a>
-              <a className="button"  href='#' >Get a Quote</a>
+              <a className="button"  href='#contactUs' >Get a Quote</a>
             </div>
           </div>
         </div>
@@ -112,7 +119,6 @@ const App = () => {
 
 
       <div className="background-2">
-        {/* Process component */}
         <ProcessCarousel />
         <div className="about-us">
           
@@ -120,16 +126,16 @@ const App = () => {
       </div>
 
       <div className="container">
-        <div className="contact-us">
+        <div className="contact-us" id='contactUs'>
           <div className="contact-details">
             <h1>HAVE A PROJECT IN MIND?</h1>
-            <p>We'd love to hear about your digital project. Please get in touch with one of our Project Consultants.</p>
+            <p>We'd love to hear about your digital project. Please get in touch with our team for more information.</p>
             <p className='contacts'>zoeversetech@gmail.com <span>|</span> +91 9444963725</p>
 
             <div className="socials">
-             <i class="fa-brands fa-square-instagram"></i>
-             <i class="fa-brands fa-square-whatsapp"></i>
-             <i class="fa-solid fa-square-envelope"></i>
+             <a ><i class="fa-brands fa-square-instagram"></i></a>
+             <a href={whatsappUrl} target='_blank' rel="noopener noreferrer"><i class="fa-brands fa-square-whatsapp"></i></a>
+             <a href={mailtoUrl} target='_blank' rel="noopener noreferrer"><i class="fa-solid fa-square-envelope"></i></a>
             </div>
           </div>
 

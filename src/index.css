@@ -237,6 +237,16 @@ p, h1, h2, h3, h4, h5, h6 {
 .background {
   background-image: url('./assets/Half.png');
   height: 100%;
+  /* background-position: right; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  padding-top: 2.125rem; 
+  /* padding-bottom: 16.5rem; */
+}
+
+.background-2 {
+  background-image: url('./assets/Opp-Half.png');
+  height: 100%;
   /* background-position: center; */
   /* background-size: cover; */
   background-repeat: no-repeat;
@@ -484,7 +494,17 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .socials i {
   color: #EB5F1E;
-  border: #EB5F1E;
+  border: 2px solid #EB5F1E;
+  padding: 10px;
+  font-size: 1.5rem;
+  /* background-color: white; */
+  border-radius: 100%;
+  transition: color 0.3s ease-in-out,background-color 0.3s ease-in-out ;
+}
+.socials i:hover {
+  color: white;
+  border: 2px solid #EB5F1E;
+  background-color: #EB5F1E;
 }
 
 
@@ -519,6 +539,14 @@ p, h1, h2, h3, h4, h5, h6 {
   .contact-us {
     grid-template-columns: 1fr;
   } 
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
 
   .nav-links  {
     /* flex-direction: column; */
