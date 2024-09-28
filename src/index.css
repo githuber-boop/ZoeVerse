@@ -126,14 +126,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-.hover-underline-animation:hover {
-  /* color: white; */
-}
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #4CE0B3;
   transition: color 0.25s ease-out;
 
 }
@@ -209,7 +205,8 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
-.cta .button:first-child:hover {
+.cta .button:first-child:hover,
+.cta .button:first-child:focus {
   background:none;
   border-color: var(--primary);
   color: var(--primary);
@@ -230,7 +227,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 }
 
-.cta .button:last-child:hover {
+.cta .button:last-child:hover,
+.cta .button:last-child:focus{
   background: var(--primary);
   color: white;
   border-color:var(--primary);
@@ -418,7 +416,7 @@ p, h1, h2, h3, h4, h5, h6 {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 20px 0;
     border-radius: 0 0 30px 30px;
     opacity: 0;
@@ -440,6 +438,15 @@ p, h1, h2, h3, h4, h5, h6 {
     transform: translateY(0);
     justify-content: center;
     align-items: center;
+  }
+
+  .nav-link a{
+    color: white;
+  }
+
+  .hover-underline-animation:after {
+
+    background-color: white;
   }
 
   .hamburger {
@@ -472,6 +479,9 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: calc(1.1rem + 2vw);
  }
 
+ .hero-text  {
+  margin-top: 10px;
+ }
 
  .hero-text p {
   font-size: calc(.8rem + 1vw);

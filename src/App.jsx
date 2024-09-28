@@ -141,6 +141,23 @@ const App = () => {
           
         </div>
       </div>
+
+      <div className="container">
+        <div className="contact-us">
+          <div className="contact-details">
+            <h1>HAVE A PROJECT IN MIND?</h1>
+            <p>We’d love to hear about your digital project. Please get in touch with one of our Project Consultants.</p>
+            <p>zoeverse@gmail.com  |  +91 9444963725</p>
+          </div>
+
+          <form action="" className="contact-form">
+            <h1>Get a Call Back Now !</h1>
+            <p>Kickstart your website or mobile app project with our expert team!</p>
+
+            
+          </form>
+        </div>
+      </div>
     </>
   )
 }
