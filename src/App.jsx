@@ -146,7 +146,7 @@ const App = () => {
         <div className="contact-us">
           <div className="contact-details">
             <h1>HAVE A PROJECT IN MIND?</h1>
-            <p>We’d love to hear about your digital project. Please get in touch with one of our Project Consultants.</p>
+            <p>We'd love to hear about your digital project. Please get in touch with one of our Project Consultants.</p>
             <p>zoeverse@gmail.com  |  +91 9444963725</p>
           </div>
 
