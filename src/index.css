@@ -281,7 +281,9 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: box-shadow 0.2s ease-out,  transform 0.2s ease-in-out;
 }
 
-.service:hover {
+.service:hover,
+.service:focus,
+.service:active {
   transform: scale(1.05);
   /* transform: skew(-10deg, -5deg); */
   /* transform: rotateY(15deg) rotateX(5deg); */
@@ -397,6 +399,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .process {
   padding: 100px 30px;
 }
+
 
 .about-us {
   padding: 50px 0;
@@ -650,6 +653,7 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
  }
 
+
  .navbar {
   padding: 50px 0;
  }
@@ -659,7 +663,12 @@ p, h1, h2, h3, h4, h5, h6 {
  }
 
  .hero-text h1 {
-  font-size: calc(1.1rem + 2vw);
+  font-family: "Readex Pro";
+  text-transform: uppercase;
+  font-size: calc(1.1rem + 5vw);
+  background: linear-gradient(90deg,#FF7F00, #EB9C1E );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
  }
 
  .hero-text  {
@@ -667,7 +676,8 @@ p, h1, h2, h3, h4, h5, h6 {
  }
 
  .hero-text p {
-  font-size: calc(.8rem + 1vw);
+  padding: 0;
+  font-size: calc(1rem + 1vw);
  }
 
  .hero-text p br, .hero-text h1 br {
@@ -682,4 +692,17 @@ p, h1, h2, h3, h4, h5, h6 {
 .heading {
   font-size: calc(1rem + 6vw) !important;
  }
+
+ 
+.process-heading {
+  font-size: calc(1.5rem + 1vw) !important;
+
+}
+
+
+.contacts span {
+  display: block;
+  color: var(--bg);
+  font-size: 5px;
+}
 }

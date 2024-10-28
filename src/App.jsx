@@ -121,7 +121,7 @@ const App = () => {
 
         <div className="background-2">
           <div className="container process" id='process'>
-            <h1 className='heading'>FROM CONCEPT TO COMPLETION</h1>
+            <h1 className='heading process-heading'>FROM CONCEPT TO COMPLETION</h1>
           <ProcessCarousel />
           </div>
           <div className="about-us">
