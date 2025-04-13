@@ -12,6 +12,8 @@ import TechStack2 from './assets/tech-stack-portfolio-2.png'
 import ProcessCarousel from './components/ProcessCarousel'
 import Navbar from './components/Navbar'
 import visionImage from './assets/vision.jpg'
+import Courses from './components/Courses'
+import Gallery from './components/Gallery'
 
 const App = () => {
   const phoneNumber = '+919444963725';
@@ -33,8 +35,8 @@ const App = () => {
       <Navbar />
         <div className="container">
           <div className="hero-text">
-            <h1>Transforming <br></br>Web Ideas into<br></br> Reality</h1>
-            <p>We offer expert web development, design, and content<br></br> creation, building seamless, visually engaging websites that <br></br> elevate your online presence and drive meaningful results.</p>
+            <h1>YOUR <br></br>Web Training and<br></br> Solutions Partner</h1>
+            <p>From expert web development and design to educational training<br></br> for colleges and corporates — we deliver  seamless  websites <br></br> and empower teams  with future-ready digital skills</p>
             <div className="cta">
               <a className="button" href={`tel:${phoneNumber}`} onClick={handleClick}>Let's Talk</a>
               <a className="button"  href='#contactUs' >Get a Quote</a>
@@ -52,7 +54,14 @@ const App = () => {
                 <article className="service">
                   <img src={webDev} alt="" />
                   <div className="service-content">
-                    <h2 className='service-heading'>WEB DEVELOPMENT</h2>
+                    <h2 className='service-heading'>WEB DEVELOPMENT COURSES</h2>
+                    <p>Build cutting-edge, scalable websites with our dynamic courses. Transform your skills and create high-impact websites now!</p>
+                  </div>
+                </article>
+                <article className="service">
+                  <img src={webContent} alt="" />
+                  <div className="service-content">
+                    <h2 className='service-heading'>WEBSITE CREATION</h2>
                     <p>Building robust, scalable websites tailored to your needs with the latest technologies for optimal performance.</p>
                   </div>
                 </article>
@@ -63,21 +72,14 @@ const App = () => {
                     <p>Crafting visually stunning, user-friendly designs that enhance user experience and brand identity.</p>
                   </div>
                 </article>
-                <article className="service">
-                  <img src={webContent} alt="" />
-                  <div className="service-content">
-                    <h2 className='service-heading'>WEB CONTENT CREATION</h2>
-                    <p>Delivering compelling, SEO-optimized content that engages audiences and drives business growth.</p>
-                  </div>
-                </article>
               </div>
             </div>
           </div>
         </div>
-
+      <Courses/>
         <div className="portfolio" id='portfolio'>
           <div className="container">
-            <h1 className="heading">OUR RECENT PROJECTS</h1>
+            <h1 className="heading">OUR PORTFOLIO PROJECTS</h1>
             <div className="portfolio-grid">
               <div className="portfolio-card">
                 <img className='portfolio-image' src={portfolioImg2} alt="" />
@@ -120,7 +122,7 @@ const App = () => {
 
 
         <div className="background-2">
-          <div className="container process" id='process'>
+          {/* <div className="container process" id='process'>
             <h1 className='heading process-heading'>FROM CONCEPT TO COMPLETION</h1>
           <ProcessCarousel />
           </div>
@@ -143,7 +145,9 @@ const App = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          <Gallery/>
         </div>
 
       <div className="container">
