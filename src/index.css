@@ -611,6 +611,7 @@ padding-top:10.875rem;
   justify-content: center;
   align-items: center;
   font-family: 'Readex Pro';
+  overflow: hidden;
 }
 
 .box-back {
