@@ -22,7 +22,7 @@ const Courses = () => {
         <div className="box-container" style={{gridArea: "box-2"}}>
           <div className="box">
             <div className="box-front">
-              <h1>Full-Stack Essentials: A Web Development (MERN) Bootcamp</h1>
+              <h1>Full-Stack Web Development Course with React and NodeJS (MERN)</h1>
             </div>
             <div class="box-back font-increase">
                <p>Master the essentials of full-stack web development using the MERN stack (MongoDB, Express.js, React, Node.js). This intensive bootcamp equips students with the skills to build and deploy dynamic, full-featured web applications, preparing them for versatile roles in the tech industry.</p>

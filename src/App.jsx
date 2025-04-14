@@ -79,22 +79,22 @@ const App = () => {
       <Courses/>
         <div className="portfolio" id='portfolio'>
           <div className="container">
-            <h1 className="heading">OUR PORTFOLIO PROJECTS</h1>
+            <h1 className="heading">OUR PORTFOLIO<br></br> PROJECTS</h1>
             <div className="portfolio-grid">
-              <div className="portfolio-card">
+            <div className="portfolio-card span-2">
+                <img className='portfolio-image' src={portfolioImg4} alt="" />
+                <div className="portfolio-card-content">
+                  <h1>GENIUS GEMS ACADEMY</h1>
+                  <img src={TechStack1} alt="" />
+                  <div className="block"><a target='_blank' href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                </div>
+              </div>
+              <div className="portfolio-card ">
                 <img className='portfolio-image' src={portfolioImg2} alt="" />
                 <div className="portfolio-card-content">
                   <h1>CSI CATHEDRAL KOLLAM</h1>
                   <img src={TechStack1} alt="" />
                   <div className="block"><a href="https://csicathedralkollam.com" target='_blank'>Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-              </div>
-              <div className="portfolio-card">
-                <img  className='portfolio-image' src={portfolioImg3} alt="" />
-                <div className="portfolio-card-content">
-                  <h1>MIDTOWN RESTAURANT</h1>
-                  <img className='techStack2' src={TechStack2} alt="" />
-                  <div className="block"><a href="#" >Check Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
               <div className="portfolio-card">
@@ -105,14 +105,7 @@ const App = () => {
                   <div className="block"><a target='_blank' href="https://ninestars-portfolio.onrender.com">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
               </div>
-              <div className="portfolio-card">
-                <img className='portfolio-image' src={portfolioImg4} alt="" />
-                <div className="portfolio-card-content">
-                  <h1>GENIUS GEMS ACADEMY</h1>
-                  <img src={TechStack1} alt="" />
-                  <div className="block"><a target='_blank' href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -153,7 +146,7 @@ const App = () => {
       <div className="container">
         <div className="contact-us" id='contactUs'>
           <div className="contact-details">
-            <h1>HAVE A PROJECT IN MIND?</h1>
+            <h1>WISH TO PARTNER WITH US?</h1>
             <p>We'd love to hear about your digital project. Please get in touch with our team for more information.</p>
             <p className='contacts'>zoeversetech@gmail.com <span>|</span> +91 9444963725</p>
 
@@ -166,7 +159,7 @@ const App = () => {
 
           <form action="https://formsubmit.co/zoeversetech@gmail.com" className="contact-form" method='POST'>
             <h1>Get a Call Back Now!</h1>
-            <p>Kickstart your website or mobile app project with our expert team!</p>
+            <p>Kickstart your web development journey with our expert team!</p>
 
             <div className='label-group'>
               <label htmlFor="">Your Name<span>*</span> :</label>
