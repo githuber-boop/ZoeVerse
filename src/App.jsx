@@ -77,38 +77,7 @@ const App = () => {
           </div>
         </div>
       <Courses/>
-        <div className="portfolio" id='portfolio'>
-          <div className="container">
-            <h1 className="heading">OUR PORTFOLIO<br></br> PROJECTS</h1>
-            <div className="portfolio-grid">
-            <div className="portfolio-card span-2">
-                <img className='portfolio-image' src={portfolioImg4} alt="" />
-                <div className="portfolio-card-content">
-                  <h1>GENIUS GEMS ACADEMY</h1>
-                  <img src={TechStack1} alt="" />
-                  <div className="block"><a target='_blank' href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-              </div>
-              <div className="portfolio-card ">
-                <img className='portfolio-image' src={portfolioImg2} alt="" />
-                <div className="portfolio-card-content">
-                  <h1>CSI CATHEDRAL KOLLAM</h1>
-                  <img src={TechStack1} alt="" />
-                  <div className="block"><a href="https://csicathedralkollam.com" target='_blank'>Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-              </div>
-              <div className="portfolio-card">
-                <img className='portfolio-image' src={portfolioImg1} alt="" />
-                <div className="portfolio-card-content">
-                  <h1>NINESTARS</h1>
-                  <img src={TechStack1} alt="" />
-                  <div className="block"><a target='_blank' href="https://ninestars-portfolio.onrender.com">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
+        
 
 
       </div>
@@ -141,6 +110,42 @@ const App = () => {
           </div> */}
 
           <Gallery/>
+
+        </div>
+
+        <div className="background">
+        <div className="portfolio" id='portfolio'>
+          <div className="container">
+            <h1 className="heading">OUR PORTFOLIO<br></br> PROJECTS</h1>
+            <div className="portfolio-grid">
+            <div className="portfolio-card span-2">
+                <img className='portfolio-image' src={portfolioImg4} alt="" />
+                <div className="portfolio-card-content">
+                  <h1>GENIUS GEMS ACADEMY</h1>
+                  <img src={TechStack1} alt="" />
+                  <div className="block"><a target='_blank' href="https://genius-gems-academy.pages.dev">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                </div>
+              </div>
+              <div className="portfolio-card ">
+                <img className='portfolio-image' src={portfolioImg2} alt="" />
+                <div className="portfolio-card-content">
+                  <h1>CSI CATHEDRAL KOLLAM</h1>
+                  <img src={TechStack1} alt="" />
+                  <div className="block"><a href="https://csicathedralkollam.com" target='_blank'>Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                </div>
+              </div>
+              <div className="portfolio-card">
+                <img className='portfolio-image' src={portfolioImg1} alt="" />
+                <div className="portfolio-card-content">
+                  <h1>NINESTARS</h1>
+                  <img src={TechStack1} alt="" />
+                  <div className="block"><a target='_blank' href="https://ninestars-portfolio.onrender.com">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
         </div>
 
       <div className="container">
